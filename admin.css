@@ -33,12 +33,12 @@ nav {
 .logo {
     display: flex;
     align-items: center;
-    margin: 10px;
+    margin: 10px 0 0 10px;
 }
 
 .logo i {
-    font-size: 27px;
-    margin-right: 12px;
+    font-size: 24px;
+    margin-right: 15px;
     color: #333;
 }
 
@@ -60,7 +60,7 @@ nav a {
 
 nav .fas {
     width: 70px;
-    height: 20px;
+    height: 40px;
     font-size: 20px;
     text-align: center;
     color: #333;
@@ -187,7 +187,7 @@ nav a:hover {
     }
 
     nav {
-        width: 105%;
+        width: 100%;
         height: auto;
     }
 
@@ -207,3 +207,205 @@ nav a:hover {
         margin-bottom: 20px;
     }
 }
+
+
+
+h1 {
+    color: #007bff;
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 40px;
+    letter-spacing: 1.5px;
+}
+
+h2 {
+    color: #333;
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+
+.team-selector {
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.team-selector ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.team-selector li {
+    background: linear-gradient(135deg, #007bff, #0056b3);
+    color: white;
+    padding: 12px 24px;
+    border-radius: 30px;
+    cursor: pointer;
+    font-size: 1.2rem;
+    font-weight: bold;
+    transition: all 0.3s ease;
+    box-shadow: 0 6px 16px rgba(0, 123, 255, 0.2);
+}
+
+.team-selector li:hover {
+    background: linear-gradient(135deg, #0056b3, #00448a);
+    transform: translateY(-5px);
+    box-shadow: 0 10px 24px rgba(0, 123, 255, 0.4);
+}
+
+.attendance-content {
+    display: none;
+    padding-top: 20px;
+}
+
+.calendar {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr); /* Ensures 7 columns for each day of the week */
+    gap: 1px;
+    margin: 20px 0;
+    background-color: #e0e0e0;
+    padding: 10px;
+}
+
+.calendar-header {
+    display: contents; /* Ensures headers are part of the same grid layout */
+}
+
+.day-header {
+    padding: 10px;
+    text-align: center;
+    background-color: #007bff;
+    color: white;
+    font-weight: bold;
+}
+
+.day {
+    background: #e9ecef;
+    padding: 15px;
+    border-radius: 8px;
+    font-size: 1rem;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+}
+
+.calendar .green {
+    background-color: #c8e6c9;
+}
+
+.calendar .red {
+    background-color: #ffcdd2;
+}
+
+.calendar .blue {
+    background-color: #bbdefb;
+}
+
+.members-info {
+    margin-top: 30px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 30px;
+    font-size: 1.1rem;
+}
+
+table, th, td {
+    border: 1px solid #e0e0e0;
+}
+
+th {
+    background-color: #007bff;
+    color: white;
+    font-weight: bold;
+    padding: 14px;
+}
+
+td {
+    padding: 12px;
+    text-align: center;
+    font-weight: 500;
+}
+
+.green {
+    background-color: #c8e6c9;
+    border-radius: 4px;
+    padding: 6px 8px;
+    font-weight: bold;
+    color: #2e7d32;
+}
+
+.red {
+    background-color: #ffcdd2;
+    border-radius: 4px;
+    padding: 6px 8px;
+    font-weight: bold;
+    color: #c62828;
+}
+
+.chart-container {
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 30px;
+    position: relative;
+}
+
+.chart-container canvas {
+    max-width: 500px;
+    width: 100%;
+    height: auto;
+}
+#attendancePieChart {
+    margin-top: -20px;
+}
+
+@media screen and (max-width: 768px) {
+    .chart-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .team-selector ul {
+        flex-direction: column;
+    }
+
+    .calendar {
+        grid-template-columns: repeat(7, 1fr); /* Keeps 7 columns on smaller screens */
+    }
+}
+
+
+button {
+    background: linear-gradient(135deg, #007bff, #0056b3);
+    color: white;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+button a {
+    color: white;
+    text-decoration: none;
+    display: block;
+}
+
+button:hover {
+    background: linear-gradient(135deg, #0056b3, #00448a);
+    transform: translateY(-5px);
+    box-shadow: 0 10px 24px rgba(0, 123, 255, 0.4);
+}
+
+button a:hover {
+    color: white;
+}
+
+

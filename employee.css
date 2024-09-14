@@ -11,7 +11,7 @@
 }
 
 body {
-    background: #f4f4f4;
+    background: #dfe9f5;
 }
 
 .container {
@@ -33,12 +33,12 @@ nav {
 .logo {
     display: flex;
     align-items: center;
-    margin: 10px;
+    margin: 10px 0 0 10px;
 }
 
 .logo i {
-    font-size: 27px;
-    margin-right: 12px;
+    font-size: 24px;
+    margin-right: 15px;
     color: #333;
 }
 
@@ -60,7 +60,7 @@ nav a {
 
 nav .fas {
     width: 70px;
-    height: 20px;
+    height: 40px;
     font-size: 20px;
     text-align: center;
     color: #333;
